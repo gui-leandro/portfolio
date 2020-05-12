@@ -23,14 +23,14 @@ header {
     display: flex; /*flex permite os cod abaixo funcionar*/
     justify-content: center; /*centraliza horizontalmente*/
     align-items: center; /*centraliza verticalmente*/
-    background-image: url('/img/background.jpg');
+    background-image: url('../img/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 @media (max-width: 1024px) {
     header {
-        background-image: url('/img/background-responsive.jpg');
+        background-image: url('../img/background-responsive.jpg');
     }
 }
 
