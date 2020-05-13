@@ -75,10 +75,17 @@ header {
     border: solid whitesmoke;
 }
 
+@media (max-height: 450px) {
+    .perfil-img {
+        width: 120px;
+        margin-top: 50px;
+    }
+}
+
 .site-subtitle,
 .site-title {
     color: whitesmoke;
-    margin: 20px;
+    line-height: 2em;
     text-shadow: 1px 2px 2px #000;
 }
 
@@ -86,6 +93,47 @@ header {
     font-style: italic;
 }
 
+.projetos {
+    height: 100vh;
+}
+
+.projetos h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    background-color: darkorange;
+}
+
+.projetos .grid {
+    display: grid;
+    gap: 3em;
+}
+
+@media (min-width: 1025px) {
+    .projetos .grid {
+        grid-template-columns: 45% 45%;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
+.projetos figure {
+    text-align: center;
+}
+
 .img-portfolio {
     width: 60%;
+}
+
+@media (min-width: 1025px) {
+    .img-portfolio {
+        width: 460px;
+        height: 250px;
+        object-fit: cover;
+        object-position: 0px -23px;
+    }
 }
