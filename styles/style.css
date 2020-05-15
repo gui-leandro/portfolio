@@ -47,6 +47,7 @@ p {
     background-color: rgba(0, 0, 0, .8);
     width: 100vw;
     z-index: 1;
+    transition: top .5s;
 }
 
 .menu ul {
@@ -84,11 +85,6 @@ a {
     width: 200px;
     border-radius: 100%;
     border: solid whitesmoke;
-
-    opacity: 0;
-    transform: translateX(30vh);
-
-    animation: linear .5s animacaoTitulo forwards;
 }
 
 @media (max-height: 450px) {
@@ -98,9 +94,10 @@ a {
     }
 }
 
+.perfil-img,
 .titulo {
     opacity: 0;
-    transform: translateX(-30vh);
+    transform: translateX(-10vh);
 
     animation: linear .5s animacaoTitulo forwards;
 }
@@ -124,17 +121,20 @@ a {
 }
 
 .sobre {
+    text-indent: 2em;
     border: none;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(121, 121, 121);
     background-color: rgb(224, 224, 224);
     padding: 20px;
-    width: 70vw;
+    width: 80vw;
     margin: 20px auto;
 }
 
 .block {
     border: none;
     border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(121, 121, 121);
     background-color: rgb(224, 224, 224);
     padding: 20px;
     margin: 20px;
@@ -199,6 +199,16 @@ a {
     }
 }
 
+figcaption {
+    margin: auto;
+    padding: 5px;
+    border: none;
+    width: 250px;
+    color: whitesmoke;
+    border-radius: 15px;
+    background-color: #000;
+}
+
 .icons {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -206,9 +216,9 @@ a {
 }
 
 .contato a {
-    color: #474A51;
+    color: rgb(28, 159, 177);
     font-size: 4em;
-    border: solid 1px #474A51;
+    border: solid 1px rgb(28, 159, 177);
     border-radius: 30px;
     margin: 30px;
     text-decoration: none;
@@ -218,7 +228,7 @@ a {
 .contato a:active,
 .contato a:hover {
     color: whitesmoke;
-    background-color: rgba(71, 74, 81, 0.8);
+    background-color: rgb(28, 159, 177);
 }
 
 @media (min-width: 1280px) {
