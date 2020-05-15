@@ -3,45 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
+    <title>Guilherme Leandro - Front End Developer</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/16b4b3ff44.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="menu">
             <ul>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#resumo">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
         <div class="perfil">
             <img class="perfil-img" src="img/perfil.png" alt="Guilherme">
-            <h1 class="site-title">Guilherme Leandro Rolim</h1>
-            <h2 class="site-subtitle">jr. frontend developer</h2>
+            <div class="titulo">
+                <h1 class="site-title">Guilherme Leandro Rolim</h1>
+                <h2 class="site-subtitle">jr. frontend developer</h2>
+            </div>
         </div>
     </header>
-    <section class="projetos">
+    <section class="resumo" id="resumo">
+        <h2>Sobre mim</h2>
+        <div class="sobre">
+            <p>Nerd e Geek apaixonado pela tecnologia, dedico meu tempo livre estudando como autodidata, através de cursos online gratuitos ou pagos para ampliar meus conhecimentos.<br>
+            Estou cursando bacharelado em Sistemas de Informação na Universidade Anhembi Morumbi (UAM), possuo conhecimentos básicos no pacote Office(Word, Power Point, Excel e Outlook), inglês de nível intermediário, conhecimentos intermediário na linguagem de programação JAVA e básico em HTML, CSS e JavaScript e NodeJS.</p>
+        </div>
+    </section>
+    <section class="projetos" id="projetos">
         <h2>Projetos</h2>
         <div class="grid">
-            <figure>
+            <figure class="block">
+                <p>Projeto desenvolvido para criptografia de arquivos txt, sua criptografia se baseia na <a href="https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar" target="_blank">Cifra de César</a>, na qual cada letra do texto é substituída por outra presente no alfabeto abaixo dela um número fixo de vezes. O projeto foi desenvolvido com HTML, CSS, JavaScript e NodeJS utilizando as API's <a href="https://github.com/expressjs/express" target="_blank">express</a> e <a href="https://github.com/node-formidable/formidable" target="_blank">formidable</a>.<br>Clique na imagem para visualizar o código fonte no GitHub.</p>
                 <a href="https://github.com/gui-leandro/encryption-project" target="_blank"><img class="img-portfolio" src="img/cripto-project.png" alt="criptografy"></a>
                 <figcaption>Criptografia com JavaScript</figcaption>
             </figure>
-            <figure>
+            <figure class="block">
+                <p>Be The Hero é um sistema desenvolvido na semana OmniStack 11 da <a href="https://rocketseat.com.br/" target="_blank">Rocketseat</a> com ReactJS, NodeJS e React Native para cadastro de ONGs, onde a mesma poderá cadastrar vários casos através da plataforma WEB. O usuário utilizará o app mobile do sistema para interagir com os casos e entrar em contato com a ONG responsável.<br>Clique na imagem para visualizar o código fonte no GitHub.</p>
                 <a href="https://github.com/gui-leandro/be-the-hero" target="_blank"><img class="img-portfolio" src="img/be-the-hero1.png" alt="be-the-hero"></a>
                 <figcaption>Be The Hero</figcaption>
             </figure>
-            <figure>
-                <p>Um cronômetro online feito com HTML, CSS e JavaScript, o código fonte do projeto pode ser visualizado nesse <a href="https://github.com/gui-leandro/stopwatch" target="_blank">link</a> e o projeto online hospedado no GitHub clicando na imagem.</p>
+            <figure class="block">
+                <p>Um projeto simples, realizando apenas contagem progressiva o cronômetro online foi desenvolvido com HTML, CSS e JavaScript, possuindo as opções de START, PAUSE e RESETE no tempo, seu código fonte pode ser visualizado nesse <a href="https://github.com/gui-leandro/stopwatch" target="_blank">link</a>.<br>Clique na imagem para testar o sistema hospedado no GitHub.</p>
                 <a href="https://gui-leandro.github.io/stopwatch/src/" target="_blank"><img class="img-portfolio" src="img/stopwatch.gif" alt="stopwatch"></a>
                 <figcaption>Cronômetro Online</figcaption>
             </figure>
-            <figure>
+            <figure class="block">
+                <p>Um sistema desenvolvido em ReactJS no front-end e NodeJS no back-end para o cadastro de usuários, cada usuário cadastrado é armazenado em um Banco de Dados SQLite utilizando o <a href="http://knexjs.org/" target="_blank">knex</a> no back-end.<br>Clique na imagem para visualizar o código fonte no GitHub.</p>
                 <a href="https://github.com/gui-leandro/user-registration" target="_blank"><img class="img-portfolio" src="img/user-registration.gif" alt="user-registrarion"></a>
                 <figcaption>Registro de Usuários</figcaption>
             </figure>
         </div>    
     </section>
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+        
+        <div class="icons">
+            <a href="https://github.com/gui-leandro" target="_blank">
+                <i class="fab fa-github-alt"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/guirdy1/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/guirdy2/" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:guilherme.gl1997@gmail.com" target="_blank">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Desenvolvido por <a href="https://www.linkedin.com/in/guirdy1/" target="_blank">Guilherme</a> | 2020.</p>
+    </footer>
 </body>
 </html>
