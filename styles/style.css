@@ -14,7 +14,7 @@ body {
 
 @media (min-width: 1024px){
     body {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
 
@@ -128,7 +128,87 @@ a {
     background-color: rgb(224, 224, 224);
     padding: 20px;
     width: 80vw;
-    margin: 20px auto;
+    margin: 20px 10px 20px 20px;
+}
+
+.meu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills {
+    padding: 10px;
+    list-style: none;
+    box-shadow: 0px 0px 5px rgb(121, 121, 121);
+    width: 50%;
+    background-color: rgba(0, 0, 0, .8);
+    color: whitesmoke;
+    margin: 20px 20px 20px 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.skills li {
+    margin: 20px 0;
+}
+
+.bar {
+    background: #353b48;
+    display: block;
+    height: 2px;
+    border-radius: 1px solid  rgba(0,0,0,.3);
+    border: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(28, 159, 177);
+}
+
+.bar span {
+    height: 2px;
+    float: left;
+    background: rgb(0, 225, 255);
+}
+
+@media (max-width: 1024px) {
+    .meu-container {
+        align-items: center;
+        flex-direction: column;
+    }
+    .skills {
+        width: 80vw;
+        margin: 10px auto;
+    }
+    .sobre {
+        margin: 20px auto 10px auto;
+    }
+}
+
+.ingles {
+    width: 40%;
+}
+
+.git {
+    width: 45%;
+}
+
+.html {
+    width: 60%;
+}
+
+.css {
+    width: 43%;
+}
+
+.javascript {
+    width: 55%;
+}
+
+.node {
+    width: 25%;
+}
+
+.java {
+    width: 60%;
 }
 
 .block {
@@ -142,7 +222,7 @@ a {
 
 .resumo,
 .contato {
-    min-height: 50vh;
+    min-height: 30vh;
     margin-bottom: 50px;
 }
 
