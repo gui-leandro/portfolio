@@ -3,8 +3,14 @@ window.onscroll = function() {
     let deslocamento = window.pageYOffset
     if(localizacao >= deslocamento) {
         document.querySelector('.menu').style.top = '0'
-    } else {
+    }
+    if(localizacao < deslocamento) {
         document.querySelector('.menu').style.top = '-100px'
+    }
+    if(deslocamento == 0) {
+        document.querySelector('.float-buttom').style.display = 'none'
+    } else {
+        document.querySelector('.float-buttom').style.display = 'flex'
     }
     localizacao = deslocamento
 }
@@ -12,6 +18,11 @@ window.onscroll = function() {
 const menuItems = document.querySelectorAll('.menu a')
 menuItems.forEach(item => {
     item.addEventListener('click', scrollToId)
+})
+
+const backHome = document.querySelector('.back-home')
+.addEventListener('click', () => {
+    scrollToPosition(0)
 })
 
 function getScrollTopById(element) {

@@ -120,6 +120,29 @@ a {
     font-style: italic;
 }
 
+.float-buttom {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 115px;
+}
+
+.float-buttom i {
+    font-size: 18pt;
+    color: rgba(0,0,0,.7);
+    background-color: rgba(28, 159, 177, .7);
+    border-radius: 100%;
+    padding: 15px;
+    margin-right: 20px;
+    transition: color .2s, background .2s;
+}
+
+.float-buttom i:hover {
+    color: rgb(0,0,0);
+    background: rgb(28, 159, 177);
+    cursor: pointer;
+}
+
 .sobre {
     text-indent: 2em;
     border: none;
@@ -129,6 +152,32 @@ a {
     padding: 20px;
     width: 80vw;
     margin: 20px 10px 20px 20px;
+}
+
+.sobre .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-indent: 0;
+}
+
+.sobre .curriculo a {
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(61, 212, 142);
+}
+
+.sobre .imersao a {
+    color: whitesmoke;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    background-color: rgb(61, 182, 212);
 }
 
 .meu-container {
