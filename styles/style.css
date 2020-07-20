@@ -158,10 +158,17 @@ a {
 
 .sobre .details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-indent: 0;
+    width: 60%;
+    margin: auto;
+}
+
+@media(max-width: 500px){
+    .sobre .details {
+        flex-direction: column;
+    }
 }
 
 .sobre .curriculo a {
@@ -173,7 +180,7 @@ a {
     background-color: rgb(61, 212, 142);
 }
 
-.sobre .imersao a {
+.sobre .sourcerer a {
     color: whitesmoke;
     width: 100%;
     padding: 10px;
